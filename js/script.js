@@ -21,7 +21,7 @@ btnBuscarFilme.onclick = () => {
         .then((resp)=> {
             resp.Search.forEach((item) => {
                 console.log(item)
-                let filme=new Filme(
+                let filme= new Filme(
                     item.imdbId,
                     item.Title,
                     item.Year,

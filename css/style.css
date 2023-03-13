@@ -9,8 +9,24 @@
 
 #lista-filmes{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 2em;
 }
 
+.card{
+    margin-left: 3vh;
+    width: 40vh;
+}
+
+.card img {
+    object-fit: cover;
+    max-width: 50vh;
+    height: 22rem;
+}
+
+.card button{
+    font-size: 1em;
+    background-color: black;
+    color: aliceblue;
+}
