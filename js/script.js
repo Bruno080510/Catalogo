@@ -21,7 +21,7 @@ function desapareceDiv(){
 btnBuscarFilme.onclick = () =>{
    if(inputBuscarFilme.value.length > 0){
        let filmes = new Array();
-       fetch("http://www.omdbapi.com/?apikey=ba316868&s="+inputBuscarFilme.value, {mode:"cors"})
+       fetch("https://www.omdbapi.com/?apikey=ba316868&s="+inputBuscarFilme.value, {mode:"cors"})
        .then((resp)=>resp.json())
        .then((resp)=>{
            resp.Search.forEach((item)=>{
@@ -66,7 +66,7 @@ let listarFilmes = async (filmes)=>{
 
 
 let detalhesFilme = async (id)=>{
-    fetch("http://www.omdbapi.com/?apikey=ba316868&i="+id)
+    fetch("https://www.omdbapi.com/?apikey=ba316868&i="+id)
     .then((resp)=> resp.json())
     .then((resp)=> {
         let filme = new Filme(
